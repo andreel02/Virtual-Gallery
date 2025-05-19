@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Phantom Stars</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<header>
+  <div class="nav-left">The Atelier</div>
+  <nav class="nav-right">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="looks.html">Looks</a></li>
+      <li><a href="virtualgallery.html">Virtual Tour</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Section with Video -->
+<section class="hero">
+  <video autoplay muted loop id="background-video">
+    <source src="sitevid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1 class="hero-text">Video on loop</h1>
+  <button id="mute-button">🔇 Unmute</button>
+</section>
+
+<script>
+  const video = document.getElementById('background-video');
+  const button = document.getElementById('mute-button');
+
+  button.addEventListener('click', () => {
+    if (video.muted) {
+      video.muted = false;
+      button.textContent = '🔊 Mute';
+    } else {
+      video.muted = true;
+      button.textContent = '🔇 Unmute';
+    }
+  });
+</script>
+
+<!-- Intro Section: The Phantom Stars -->
+<section class="intro">
+  <div class="intro-image">
+    <img src="maindress.jpg" alt="Main Dress">
+  </div>
+  <div class="intro-text">
+    <h2>THE PHANTOM STARS</h2>
+    <p>The radiance of stars falls from distant light years, like a vortex painting slowly unfolding, and time and space are immersed in gentle mystery. Fingertip touch, twinkling stars, pouring Milky Way, overflowing romance. Every ray of light is the whispers of the stars, leading us to encounter the exquisite interweaving of the universe, dreams, and romance, and feel the true and profound charm of the starry sky. The Bridal By The Atelier 2025 Autumn/Winter collection draws inspiration from the grandeur of Russian architecture and the dreamlike interweaving of stars. Craftsmen cleverly capture the whispers of the Milky Way, using fabrics as carriers to replicate the beauty of celestial bodies, creating a dreamy wedding dress that dances with the stars. Various concrete decorative patterns are interspersed in the series design, such as "simulating light floating in the direction of star orbit" and "ancient Russian architecture". Designers use techniques such as car bars, hot stamping, lotus leaves, and machine embroidery to ingeniously decompose and recombine various crafts, creating magical artistic effects. Ice blue aurora hot stamping and scattered star stitching beads add brilliant radiance. Each dress is crafted with ingenuity, allowing the bride to become the protagonist of a starry sky dream, blooming with unique and romantic charm, interpreting The Atelier's unique starry sky romanticism.</p>
+  </div>
+</section>  
+
+<!-- Dress Gallery Section -->
+<section class="gallery">
+  <div class="gallery-item">
+    <img src="dress1.jpg" alt="Dress 1">
+    <div class="hover-info">
+      <div class="dress-name">Renata</div>
+      <div class="price-tag">$11,303.46</div>
+    </div>
+  </div>  
+
+  <div class="gallery-item">
+    <img src="dress2.jpg" alt="Dress 2">
+    <div class="hover-info">
+      <div class="dress-name">Annalise</div>
+      <div class="price-tag">$11,303.46</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="dress3.jpg" alt="Dress 3">
+    <div class="hover-info">
+      <div class="dress-name">Callista</div>
+      <div class="price-tag">$16,364.85</div>
+    </div>
+  </div>
+
+  <div class="view-collection">
+    <a href="looks.html">View<br>Collection</a>
+  </div>
+</section>
+
+<!-- Virtual Art Gallery Section -->
+<section class="virtual-gallery">
+  <div class="virtual-gallery-text">
+    <h3>Virtual Gallery</h3>
+    <p>Step into our immersive virtual gallery and experience <em>The Phantom Stars</em> collection like never before. </p>
+  </div>
+ <div class="virtual-gallery-box">
+  <iframe 
+    src="https://www.artsteps.com/embed/6822ab1b6b83a1ee5290c7aa/560/315" 
+    class="virtual-iframe" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Looks</a></li>
+        <li><a href="#">Virtual Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">The Atelier</a></li>
+        <li><a href="#">Bridal</a></li>
+        <li><a href="#">Couture</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Boutique Services</h4>
+      <p>Kuala Lumpur, London, Shanghai, Taiwan</p>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <p>Weibo, Instagram, XiaoHongShu</p>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>info@theateliercouture.com<br>021-64203899</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 All rights reserved | HCI 525 Project - Designed by Andree Louissaint</p>
+</footer>
+
+</body>
+</html>

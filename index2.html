@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Phantom Stars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+  <div class="nav-left">The Atelier</div>
+  <nav class="nav-right">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Looks</a></li>
+      <li><a href="#">Virtual Tour</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section with Video -->
+<section class="hero">
+  <video autoplay muted loop id="background-video">
+    <source src="sitevid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1 class="hero-text">Video on loop</h1>
+</section>
+
+<script>
+  const video = document.getElementById('background-video');
+  const button = document.getElementById('mute-button');
+
+  button.addEventListener('click', () => {
+    if (video.muted) {
+      video.muted = false;
+      button.textContent = '🔊 Mute';
+    } else {
+      video.muted = true;
+      button.textContent = '🔇 Unmute';
+    }
+  });
+</script>
+
+<!-- Intro Section: The Phantom Stars -->
+<section class="intro">
+    <div class="intro-image">
+      <img src="maindress.jpg" alt="Main Dress">
+    </div>
+    <div class="intro-text">
+      <h2>THE PHANTOM STARS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      <p>More description text here to match your design...</p>
+    </div>
+  </section>  
+
+<!-- Dress Gallery Section -->
+<section class="gallery">
+  <div class="gallery-item">
+    <img src="dress1.jpg" alt="Dress 1">
+    <div class="price-tag">$5,200</div>
+  </div>
+  <div class="gallery-item">
+    <img src="dress2.jpg" alt="Dress 2">
+    <div class="price-tag">$4,800</div>
+  </div>
+  <div class="gallery-item">
+    <img src="dress3.jpg" alt="Dress 3">
+    <div class="price-tag">$6,100</div>
+  </div>
+  <div class="view-collection">
+    <a href="#">View<br>Collection</a>
+  </div>
+</section>
+
+<!-- Virtual Art Gallery Section -->
+<section class="virtual-gallery">
+  <div class="virtual-gallery-text">
+    <h3>Virtual Art Gallery</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+  </div>
+  <div class="virtual-gallery-placeholder">
+    <p>Virtual Art Gallery</p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Looks</a></li>
+        <li><a href="#">Virtual Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">The Atelier</a></li>
+        <li><a href="#">Bridal</a></li>
+        <li><a href="#">Couture</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Boutique Services</h4>
+      <p>Kuala Lumpur, London, Shanghai, Taiwan</p>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <p>Weibo, Instagram, XiaoHongShu</p>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>info@theateliercouture.com<br>021-64203899</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025 All rights reserved | Designed by Andree Louissaint</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+  font-family: 'Georgia', serif;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bav Bar Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #eeeeee;
+}
+
+.nav-left {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right li {
+  margin-left: 30px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery Title */
+.gallery-title {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  margin: 60px auto 30px auto;
+  padding: 0 20px;
+  color: black;
+  width: fit-content;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+  gap: 0; /* no space between items */
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Dress by themseves */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: none;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* Hover Label */
+.price-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.gallery-item:hover .price-tag {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #d8d2e8;
+  padding: 40px 10%;
+  color: black;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
