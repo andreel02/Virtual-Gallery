@@ -1,0 +1,55 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body styling */
+  body {
+    font-family: 'Georgia', serif;
+    color: black;
+    background-color: white;
+  }
+
+  
+  /* HNavigation Bar Styles) */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #eeeeee; 
+  }
+  
+  .nav-left {
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  .nav-right ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-right li {
+    margin-left: 30px;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+  
+/* Virtual Gallery Part */
+.virtual-fullscreen {
+  width: 100vw;
+  height: calc(100vh - 80px); 
+  border: none;
+  display: block;
+}
